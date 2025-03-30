@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduConnect</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+       
+    </style>
+</head>
+<body>
+    <div class="landing-page background" id="landing">
+        <h1>Welcome to EduConnect</h1>
+        <p>Easily connect with qualified teachers for your school. Browse our listings to find the best educators.</p>
+        <button onclick="showTeachers()">Enter the Staff Room</button>
+    </div>
+    
+    <div class="container hidden" id="staffRoom">
+        <header>
+            <h1>Find Educators and Connect with Students</h1>
+        </header>
+        <input type="text" id="search" placeholder="Search by subject, qualification, or name..." onkeyup="filterTeachers()">
+        <div id="teacherList">
+            <!--- The teacher list starts here-->
+            <div class="teacher-card">
+                <img src="images/image-bg.png" alt="John Doe">
+                <div class="teacher-info">
+                    <h3>Umeh Moses</h3>
+                    <p><strong>Main Subject:</strong> Mathematics</p>
+                    <p><strong>Other Subjects:</strong> Physics, Further Mathematics, Python, Robotics</p>
+                    <p><strong>Qualification:</strong> B.Ed in Mathematics</p>
+                    <p><strong>Mobile:</strong> +1234567890</p>
+                    <p><strong>Social:</strong> <a href="https://twitter.com/johndoe" target="_blank">Twitter</a></p>
+                    <p><strong>Email:</strong> johndoe@example.com</p>
+                </div>
+            </div>
+            <div class="teacher-card">
+                <img src="images/team-member-01.jpg" alt="John Doe">
+                <div class="teacher-info">
+                    <h3>John Doe</h3>
+                    <p><strong>Main Subject:</strong> Mathematics</p>
+                    <p><strong>Other Subjects:</strong> Physics, Chemistry</p>
+                    <p><strong>Qualification:</strong> B.Ed in Mathematics</p>
+                    <p><strong>Mobile:</strong> +1234567890</p>
+                    <p><strong>Social:</strong> <a href="https://twitter.com/johndoe" target="_blank">Twitter</a></p>
+                    <p><strong>Email:</strong> johndoe@example.com</p>
+                </div>
+            </div>
+            <div class="teacher-card">
+                <img src="images/team-member-02.jpg" alt="John Doe">
+                <div class="teacher-info">
+                    <h3>John Doe</h3>
+                    <p><strong>Main Subject:</strong> Mathematics</p>
+                    <p><strong>Other Subjects:</strong> Physics, Chemistry</p>
+                    <p><strong>Qualification:</strong> B.Ed in Mathematics</p>
+                    <p><strong>Mobile:</strong> +1234567890</p>
+                    <p><strong>Social:</strong> <a href="https://twitter.com/johndoe" target="_blank">Twitter</a></p>
+                    <p><strong>Email:</strong> johndoe@example.com</p>
+                </div>
+            </div>
+            <div class="teacher-card">
+                <img src="images/team-member-03.jpg" alt="John Doe">
+                <div class="teacher-info">
+                    <h3>John Doe</h3>
+                    <p><strong>Main Subject:</strong> Mathematics</p>
+                    <p><strong>Other Subjects:</strong> Physics, Chemistry</p>
+                    <p><strong>Qualification:</strong> B.Ed in Mathematics</p>
+                    <p><strong>Mobile:</strong> +1234567890</p>
+                    <p><strong>Social:</strong> <a href="https://twitter.com/johndoe" target="_blank">Twitter</a></p>
+                    <p><strong>Email:</strong> johndoe@example.com</p>
+                </div>
+            </div>
+            <div class="teacher-card">
+                <img src="images/team-member-04.jpg" alt="John Doe">
+                <div class="teacher-info">
+                    <h3>John Doe</h3>
+                    <p><strong>Main Subject:</strong> Mathematics</p>
+                    <p><strong>Other Subjects:</strong> Physics, Chemistry</p>
+                    <p><strong>Qualification:</strong> B.Ed in Mathematics</p>
+                    <p><strong>Mobile:</strong> +1234567890</p>
+                    <p><strong>Social:</strong> <a href="https://twitter.com/johndoe" target="_blank">Twitter</a></p>
+                    <p><strong>Email:</strong> johndoe@example.com</p>
+                </div>
+            </div>
+            <div class="teacher-card">
+                <img src="https://via.placeholder.com/80" alt="John Doe">
+                <div class="teacher-info">
+                    <h3>John Doe</h3>
+                    <p><strong>Main Subject:</strong> Mathematics</p>
+                    <p><strong>Other Subjects:</strong> Physics, Chemistry</p>
+                    <p><strong>Qualification:</strong> B.Ed in Mathematics</p>
+                    <p><strong>Mobile:</strong> +1234567890</p>
+                    <p><strong>Social:</strong> <a href="https://twitter.com/johndoe" target="_blank">Twitter</a></p>
+                    <p><strong>Email:</strong> johndoe@example.com</p>
+                </div>
+            </div>
+            <div class="teacher-card">
+                <img src="https://via.placeholder.com/80" alt="John Doe">
+                <div class="teacher-info">
+                    <h3>John Doe</h3>
+                    <p><strong>Main Subject:</strong> Mathematics</p>
+                    <p><strong>Other Subjects:</strong> Physics, Chemistry</p>
+                    <p><strong>Qualification:</strong> B.Ed in Mathematics</p>
+                    <p><strong>Mobile:</strong> +1234567890</p>
+                    <p><strong>Social:</strong> <a href="https://twitter.com/johndoe" target="_blank">Twitter</a></p>
+                    <p><strong>Email:</strong> johndoe@example.com</p>
+                </div>
+            </div>
+            <div class="teacher-card">
+                <img src="https://via.placeholder.com/80" alt="John Doe">
+                <div class="teacher-info">
+                    <h3>John Doe</h3>
+                    <p><strong>Main Subject:</strong> Mathematics</p>
+                    <p><strong>Other Subjects:</strong> Physics, Chemistry</p>
+                    <p><strong>Qualification:</strong> B.Ed in Mathematics</p>
+                    <p><strong>Mobile:</strong> +1234567890</p>
+                    <p><strong>Social:</strong> <a href="https://twitter.com/johndoe" target="_blank">Twitter</a></p>
+                    <p><strong>Email:</strong> johndoe@example.com</p>
+                </div>
+            </div>
+            <div class="teacher-card">
+                <img src="https://via.placeholder.com/80" alt="John Doe">
+                <div class="teacher-info">
+                    <h3>John Doe</h3>
+                    <p><strong>Main Subject:</strong> Mathematics</p>
+                    <p><strong>Other Subjects:</strong> Physics, Chemistry</p>
+                    <p><strong>Qualification:</strong> B.Ed in Mathematics</p>
+                    <p><strong>Mobile:</strong> +1234567890</p>
+                    <p><strong>Social:</strong> <a href="https://twitter.com/johndoe" target="_blank">Twitter</a></p>
+                    <p><strong>Email:</strong> johndoe@example.com</p>
+                </div>
+            </div>
+            <div class="teacher-card">
+                <img src="https://via.placeholder.com/80" alt="John Doe">
+                <div class="teacher-info">
+                    <h3>John Doe</h3>
+                    <p><strong>Main Subject:</strong> Mathematics</p>
+                    <p><strong>Other Subjects:</strong> Physics, Chemistry</p>
+                    <p><strong>Qualification:</strong> B.Ed in Mathematics</p>
+                    <p><strong>Mobile:</strong> +1234567890</p>
+                    <p><strong>Social:</strong> <a href="https://twitter.com/johndoe" target="_blank">Twitter</a></p>
+                    <p><strong>Email:</strong> johndoe@example.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        function showTeachers() {
+            document.getElementById("landing").style.display = "none";
+            document.getElementById("staffRoom").classList.remove("hidden");
+        }
+        
+        function filterTeachers() {
+            let input = document.getElementById("search").value.toLowerCase();
+            let cards = document.querySelectorAll(".teacher-card");
+            cards.forEach(card => {
+                let text = card.innerText.toLowerCase();
+                card.style.display = text.includes(input) ? "flex" : "none";
+            });
+        }
+    </script>
+
+<script>
+    const images = [
+        'url("images/image-bg.png")',
+        'url("images/classroom.png")',,
+        'url("images/school-bg.jpg")'
+    ];
+    let currentImageIndex = 0;
+    const background = document.querySelector(".background");
+
+    function changeBackground() {
+       // background.style.opacity = 0;
+            background.style.animation = " ";
+            currentImageIndex = (currentImageIndex + 1) % images.length;
+            console.log(currentImageIndex)
+            background.style.backgroundImage = images[currentImageIndex];
+            background.style.animation = "zoomInOut 9.5s linear infinite";
+           // background.style.opacity = 1;
+       
+    }
+    setInterval(changeBackground, 9500);
+    //background.style.backgroundImage = images[0];
+   // background.style.animation = "zoomInOut 5s infinite";
+</script>
+</body>
+</html>
